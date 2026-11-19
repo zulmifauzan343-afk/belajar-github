@@ -1,80 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LKPD: Manajemen Server VPS AWS</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
     <div class="document-container">
-      <!-- Header Dokumen -->
-      <header class="doc-header">
-        <h1>LKPD: Manajemen Server VPS AWS</h1>
-        <div class="header-line"></div>
-      </header>
+        <!-- Header Dokumen -->
+        <header class="doc-header">
+            <h1>LKPD: Manajemen Server VPS AWS</h1>
+            <div class="header-line"></div>
+        </header>
 
-      <!-- Kotak Identitas Siswa -->
-      <section class="identity-box">
-        <div class="identity-grid">
-          <div class="form-group">
-            <label for="nama">Nama</label>
-            <span class="colon">:</span>
-            <input type="text" id="nama" class="dashed-input" placeholder="Masukkan nama lengkap..." />
-          </div>
+        <!-- Kotak Identitas Siswa -->
+        <section class="identity-box">
+            <div class="identity-grid">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <span class="colon">:</span>
+                    <input type="text" id="nama" class="dashed-input" placeholder="Masukkan nama lengkap...">
+                </div>
 
-          <div class="form-group">
-            <label for="tanggal">Tanggal</label>
-            <span class="colon">:</span>
-            <input type="text" id="tanggal" class="dashed-input" placeholder="HH/BB/TTTT" />
-          </div>
+                <div class="form-group">
+                    <label for="tanggal">Tanggal</label>
+                    <span class="colon">:</span>
+                    <input type="text" id="tanggal" class="dashed-input" placeholder="HH/BB/TTTT">
+                </div>
 
-          <div class="form-group">
-            <label for="kelas">Kelas</label>
-            <span class="colon">:</span>
-            <input type="text" id="kelas" class="dashed-input" placeholder="Masukkan kelas..." />
-          </div>
+                <div class="form-group">
+                    <label for="kelas">Kelas</label>
+                    <span class="colon">:</span>
+                    <input type="text" id="kelas" class="dashed-input" placeholder="Masukkan kelas...">
+                </div>
 
-          <div class="form-group">
-            <label for="instruktur">Instruktur</label>
-            <span class="colon">:</span>
-            <input type="text" id="instruktur" class="dashed-input" placeholder="Masukkan nama instruktur..." />
-          </div>
-        </div>
-      </section>
+                <div class="form-group">
+                    <label for="instruktur">Instruktur</label>
+                    <span class="colon">:</span>
+                    <input type="text" id="instruktur" class="dashed-input" placeholder="Masukkan nama instruktur...">
+                </div>
+            </div>
+        </section>
 
-      <!-- Fase 1 -->
-      <section class="phase-section">
-        <h2 class="phase-title">Fase 1: Pengenalan Konsep VPS & Cloud</h2>
-        <p class="instruction-text">Jelaskan secara singkat pemahaman Anda mengenai perbedaan layanan berikut dengan mengisi kotak yang tersedia.</p>
+        <!-- Fase 1 -->
+        <section class="phase-section">
+            <h2 class="phase-title">Fase 1: Pengenalan Konsep VPS & Cloud</h2>
+            <p class="instruction-text">
+                Jelaskan secara singkat pemahaman Anda mengenai perbedaan layanan berikut dengan mengisi kotak yang tersedia.
+            </p>
 
-        <!-- Grid Kartu Layanan -->
-        <div class="cards-grid">
-          <!-- Kartu 1 -->
-          <div class="service-card">
-            <h3>Shared Hosting</h3>
-            <textarea rows="4" placeholder="Tulis penjelasan mengenai Shared Hosting di sini..."></textarea>
-          </div>
+            <!-- Grid Kartu Layanan -->
+            <div class="cards-grid">
+                <!-- Kartu 1 -->
+                <div class="service-card">
+                    <h3>Shared Hosting</h3>
+                    <textarea rows="5">Layanan hosting di mana satu server fisik dibagi dan digunakan bersama-sama oleh banyak pengguna. Sumber daya (CPU, RAM) dipakai bersama sehingga harganya murah, namun performa bisa saling memengaruhi.</textarea>
+                </div>
 
-          <!-- Kartu 2 -->
-          <div class="service-card">
-            <h3>Dedicated Server</h3>
-            <textarea rows="4" placeholder="Tulis penjelasan mengenai Dedicated Server di sini..."></textarea>
-          </div>
+                <!-- Kartu 2 -->
+                <div class="service-card">
+                    <h3>Dedicated Server</h3>
+                    <textarea rows="5">Layanan di mana pengguna menyewa satu server fisik secara penuh tanpa dibagi dengan pihak lain. Menawarkan kontrol penuh, performa maksimal, dan keamanan tinggi dengan biaya yang mahal.</textarea>
+                </div>
 
-          <!-- Kartu 3 -->
-          <div class="service-card">
-            <h3>Amazon Lightsail</h3>
-            <textarea rows="4" placeholder="Tulis penjelasan mengenai Amazon Lightsail di sini..."></textarea>
-          </div>
+                <!-- Kartu 3 -->
+                <div class="service-card">
+                    <h3>Amazon Lightsail</h3>
+                    <textarea rows="5">Layanan VPS dari AWS yang dirancang agar mudah digunakan dan memiliki paket harga tetap yang terjangkau. Sangat cocok untuk pemula, blog, atau aplikasi skala kecil hingga menengah.</textarea>
+                </div>
 
-          <!-- Kartu 4 -->
-          <div class="service-card">
-            <h3>Amazon EC2</h3>
-            <textarea rows="4" placeholder="Tulis penjelasan mengenai Amazon EC2 di sini..."></textarea>
-          </div>
-        </div>
-      </section>
+                <!-- Kartu 4 -->
+                <div class="service-card">
+                    <h3>Amazon EC2</h3>
+                    <textarea rows="5">Layanan komputasi awan (cloud computing) skala enterprise dari AWS yang menyediakan kapasitas fleksibel dan dapat diskalakan. Cocok untuk aplikasi profesional yang kompleks dan butuh performa tinggi.</textarea>
+                </div>
+            </div>
+        </section>
     </div>
-  </body>
+
+</body>
 </html>
